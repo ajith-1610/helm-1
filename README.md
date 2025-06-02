@@ -1,23 +1,23 @@
 # helm-1
 practice
 
-# Search for nginx charts in configured Helm repositories
+1. Search for nginx charts in configured Helm repositories
 helm search repo | grep -i nginx
 
-# Check Helm version
+2. Check Helm version
 helm version
 
-# List all installed releases
+3. List all installed releases
 helm list
 
-# Show default values for the Bitnami nginx chart
+4. Show default values for the Bitnami nginx chart
 helm show values bitnami/nginx
 
-# Generate Kubernetes manifest files locally using Helm
+5. Generate Kubernetes manifest files locally using Helm
 helm template my-nginx bitnami/nginx
 
-# Install or upgrade the nginx release with NodePort service type
+6. Install or upgrade the nginx release with NodePort service type
 helm upgrade my-nginx bitnami/nginx --set service.type=NodePort
 
-# Check the status of the nginx release
+7. Check the status of the nginx release
 helm status my-nginx
